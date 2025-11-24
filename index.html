@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro São Carlos - Programação da Semana</title>
+    <meta name="description" content="Confira a programação completa do Teatro Municipal de São Carlos. Peças, horários e ingressos disponíveis.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <!-- Skip Link para Acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Teatro São Carlos</h1>
+            <p class="hero-subtitle">A arte que transforma vidas</p>
+            <div class="hero-badge">
+                <span aria-hidden="true">⭐</span>
+                <span>Programação desta semana</span>
+                <span aria-hidden="true">⭐</span>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+        <div class="container">
+            <div class="section-header" id="sectionHeader">
+                <h2 class="section-title">Em Cartaz</h2>
+                <p class="section-subtitle">Confira as apresentações desta semana</p>
+            </div>
+
+            <div class="pecas-grid" id="pecasGrid">
+                <!-- Os cards serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <h3 class="footer-title">Teatro Municipal de São Carlos</h3>
+        <p class="footer-info">
+            <span aria-hidden="true">📍</span>
+            Rua do Teatro, 123 - Centro, São Carlos - SP
+        </p>
+        <p class="footer-tagline">A cultura move a cidade</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Fechar modal">×</button>
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <div class="modal-body">
+                <div class="modal-badges" id="modalBadges"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-autor" id="modalAutor"></p>
+                <p class="modal-sinopse" id="modalSinopse"></p>
+                <div class="modal-info-grid" id="modalInfo"></div>
+                <button class="modal-cta" id="modalCta">Mais Informações</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
